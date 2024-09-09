@@ -31,9 +31,10 @@ domain("www.githubstatus.com") {
 	:root {
 		--ghd-code-color: #fffff;
 		--ghd-code-background: #101010;
-		--bgColor-muted: #181818 !important;
+		--bgColor-inset: #1c1c1c !important;
+		--bgColor-muted: #1c1c1c !important;
 		--vspr-bg-base: #101010;
-		--vspr-bg-subtle: #181818;
+		--vspr-bg-subtle: #1c1c1c;
 		--vspr-fg-base: #ffffff;
 		--vspr-fg-subtle: #a0a0a0;
 		--vspr-accent: #ffc799;
@@ -607,10 +608,10 @@ domain("www.githubstatus.com") {
 		--overlay-bgColor: #181818;
 		--sideNav-bgColor-selected: #181818;
 		--skeletonLoader-bgColor: #202020;
-		--card-bgColor: #181818;
+		--card-bgColor: #101010;
 		--fgColor-onEmphasis: #181818;
 		--fgColor-white: #181818;
-		--bgColor-default: #181818;
+		--bgColor-default: #101010;
 		--bgColor-muted: #202020;
 		--bgColor-inset: #202020;
 		--bgColor-white: #181818;
@@ -655,12 +656,12 @@ domain("www.githubstatus.com") {
 			--overlay-bgColor: #181818;
 			--sideNav-bgColor-selected: #181818;
 			--skeletonLoader-bgColor: #202020;
-			--card-bgColor: #181818;
+			--card-bgColor: #101010;
 			--fgColor-onEmphasis: #181818;
 			--fgColor-white: #181818;
-			--bgColor-default: #181818;
+			--bgColor-default: #101010;
 			--bgColor-muted: #202020;
-			--bgColor-inset: #202020;
+			--bgColor-inset: #101010;
 			--bgColor-white: #181818;
 			--color-prettylights-syntax-invalid-illegal-text: #202020;
 			--color-prettylights-syntax-carriage-return-text: #202020;
@@ -1787,7 +1788,7 @@ domain("www.githubstatus.com") {
 		color: var(--tooltip-fgColor, var(--fgColor-onEmphasis, var(--color-fg-on-emphasis, #181818)));
 	}
 	.cXNreu {
-		background-color: var(--bgColor-default, var(--color-canvas-default, #181818));
+		background-color: var(--bgColor-default, var(--color-canvas-default, #101010));
 	}
 	.cDLBls,
 	.jEdVkE {
@@ -2734,7 +2735,6 @@ domain("www.githubstatus.com") {
 		background: #181818;
 		border-color: #484848 !important;
 	}
-	.dashboard-sidebar,
 	.tint-box,
 	.capped-card-content,
 	.table-list-item,
@@ -4785,9 +4785,9 @@ domain("gist.github.com") {
 		--card-bgColor: #181818;
 		--fgColor-onEmphasis: #181818;
 		--fgColor-white: #181818;
-		--bgColor-default: #181818;
+		--bgColor-default: #101010;
 		--bgColor-muted: #202020;
-		--bgColor-inset: #202020;
+		--bgColor-inset: #1c1c1c;
 		--bgColor-white: #181818;
 		--color-prettylights-syntax-invalid-illegal-text: #202020;
 		--color-prettylights-syntax-carriage-return-text: #202020;
@@ -10449,7 +10449,7 @@ domain("stylishthemes.github.io") {
 		--avatar-bgColor: transparent;
 		--avatar-borderColor: transparent;
 		--bgColor-accent-emphasis: /*[[base-color]]*/;
-		--bgColor-default: #181818;
+		--bgColor-default: #101010;
 		--bgColor-emphasis: #343434;
 		--bgColor-inset: #181818;
 		--bgColor-muted: #222;
