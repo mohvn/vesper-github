@@ -31,8 +31,16 @@ domain("www.githubstatus.com") {
 	:root {
 		--ghd-code-color: #fffff;
 		--ghd-code-background: #101010;
-		--bgColor-inset: #1c1c1c !important;
-		--bgColor-muted: #1c1c1c !important;
+		--bgColor-inset: var(--vspr-bg-subtle) !important;
+		--fgColor-open: var(--vspr-fg-suc) !important;
+		--button-primary-bgColor-rest: var(--vspr-accent) !important;
+		--button-primary-fgColor-rest: var(--vspr-bg-base) !important;
+		--button-primary-bgColor-hover: var(--vspr-accent) !important;
+		--fgColor-closed: var(--vspr-fg-err) !important;
+		--fgColor-done: var(--vspr-accent) !important;
+		--AppHeader-bg: var(--vspr-bg-base) !important;
+		
+		
 		--vspr-bg-base: #101010;
 		--vspr-bg-subtle: #1c1c1c;
 		--vspr-fg-base: #ffffff;
@@ -41,8 +49,26 @@ domain("www.githubstatus.com") {
 		--vspr-fg-err: #ff8080;
 		--vspr-fg-suc: #99ffe4;
 	}
+	
+	.AppHeader {
+		background-color: var(--vspr-bg-base) !important;
+		box-shadow: none;
+	}
+	
+	.UnderlineNav {
+		box-shadow: none;
+	}
+	
+	.border-right {
+		border: none !important;
+	}
+	
+	
 
-
+	.bVvbgP > svg:nth-child(1) {
+		color: #101010;
+	}
+	
 	.jtQniD {
 		background: var(--vspr-bg-subtle) !important;
 	}
@@ -612,7 +638,7 @@ domain("www.githubstatus.com") {
 		--fgColor-onEmphasis: #181818;
 		--fgColor-white: #181818;
 		--bgColor-default: #101010;
-		--bgColor-muted: #202020;
+		--bgColor-muted: var(--vspr-bg-subtle);
 		--bgColor-inset: #202020;
 		--bgColor-white: #181818;
 		--color-prettylights-syntax-invalid-illegal-text: #202020;
@@ -660,7 +686,7 @@ domain("www.githubstatus.com") {
 			--fgColor-onEmphasis: #181818;
 			--fgColor-white: #181818;
 			--bgColor-default: #101010;
-			--bgColor-muted: #202020;
+			--bgColor-muted: var(--vspr-bg-subtle);
 			--bgColor-inset: #101010;
 			--bgColor-white: #181818;
 			--color-prettylights-syntax-invalid-illegal-text: #202020;
@@ -676,7 +702,7 @@ domain("www.githubstatus.com") {
 		--controlTrack-fgColor-disabled: #181818;
 		--controlKnob-bgColor-checked: #181818;
 		--button-default-shadow-resting: 0 0 0 0 #f0f0f0;
-		--button-primary-fgColor-rest: #181818;
+		: #181818;
 		--button-primary-iconColor-rest: #181818;
 		--button-primary-shadow-selected: 0 0 0 0 #f0f0f0;
 		--button-outline-fgColor-active: #181818;
@@ -2902,7 +2928,7 @@ domain("www.githubstatus.com") {
 	.label-select-menu .select-menu-item:focus,
 	.label-select-menu .select-menu-item:hover,
 	.hRRzix:hover {
-		background: #222 !important;
+		background: var(--vspr-bg-subtle) !important;
 	}
 	.search-result-group {
 		background: #282828 !important;
@@ -4786,7 +4812,7 @@ domain("gist.github.com") {
 		--fgColor-onEmphasis: #181818;
 		--fgColor-white: #181818;
 		--bgColor-default: #101010;
-		--bgColor-muted: #202020;
+		--bgColor-muted: var(--vspr-bg-subtle);
 		--bgColor-inset: #1c1c1c;
 		--bgColor-white: #181818;
 		--color-prettylights-syntax-invalid-illegal-text: #202020;
@@ -10452,7 +10478,7 @@ domain("stylishthemes.github.io") {
 		--bgColor-default: #101010;
 		--bgColor-emphasis: #343434;
 		--bgColor-inset: #181818;
-		--bgColor-muted: #222;
+		--bgColor-muted: var(--vspr-bg-subtle);
 		--bgColor-neutral-emphasis: #606060;
 		--bgColor-neutral-muted: #343434;
 		--borderColor-accent-emphasis: /*[[base-color]]*/;
@@ -10471,7 +10497,7 @@ domain("stylishthemes.github.io") {
 		--button-default-borderColor-rest: #343434;
 		--button-default-fgColor-rest: #c6c6c6;
 		--button-invisible-iconColor-rest: #afafaf;
-		--button-primary-fgColor-rest: #fff;
+		--button-primary-fgColor-rest: #101010;
 		--buttonCounter-default-bgColor-rest: transparent;
 		--control-bgColor-active: #343434;
 		--control-checked-borderColor-rest: /*[[base-color]]*/;
