@@ -39,6 +39,8 @@ domain("www.githubstatus.com") {
 		--fgColor-closed: var(--vspr-fg-err) !important;
 		--fgColor-done: var(--vspr-accent) !important;
 		--AppHeader-bg: var(--vspr-bg-base) !important;
+		--button-primary-bgColor-active: #d7a77f !important;
+		--borderColor-done-emphasis: #d7a77f !important;
 		
 		
 		--vspr-bg-base: #101010;
@@ -48,6 +50,16 @@ domain("www.githubstatus.com") {
 		--vspr-accent: #ffc799;
 		--vspr-fg-err: #ff8080;
 		--vspr-fg-suc: #99ffe4;
+	}
+	
+	
+	
+	svg.hide-sm {
+		color: var(--vspr-bg-base);
+	}
+
+	.markdown-body img {
+		background: transparent !important;
 	}
 	
 	.AppHeader {
@@ -6239,7 +6251,7 @@ domain("gist.github.com") {
 		/*[[bg-options]]*/
 	}
 	.markdown-body img {
-		background: none;
+		background: transparent !important;
 	}
 	a {
 		color: /*[[base-color]]*/;
@@ -10190,9 +10202,6 @@ domain("viewscreen.githubusercontent.com") {
 	}
 	.markdown-body table img {
 		background-color: transparent;
-	}
-	.markdown-body img {
-		background-color: #181818;
 	}
 	.markdown-body .emoji {
 		background-color: transparent;
