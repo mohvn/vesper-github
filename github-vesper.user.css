@@ -56,6 +56,10 @@ domain("www.githubstatus.com") {
 		
 	}
 	
+	.dvTqVy {
+		background-color: #10101073
+	}
+	
 	.State--merged {
 		color: var(--vspr-bg-base) !important;
 	}
