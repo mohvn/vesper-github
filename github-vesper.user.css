@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        GitHub Vesper
 @namespace   StylishThemes
-@version     3.0
+@version     2.0
 @license     MIT
 @author      mohvn
 @advanced color base-color "Base color" #ffc799
@@ -60,6 +60,18 @@ domain("www.githubstatus.com") {
 		--fontStack-sansSerifDisplay: "Geist", sans-serif !important;
 		--fontStack-sansSerif: "Geist", sans-serif !important;
 		--fontStack-system: "Geist", sans-serif !important;
+	}
+
+	.Box-body {
+		border-bottom: none !important;
+	}
+
+	.graph-before-activity-overview {
+		border-radius: var(--borderRadius-medium);
+	}
+
+	.Box {
+		border-style: none !important;
 	}
 
 	:where(.prc-Button-ButtonBase-c50BI):where([data-variant="primary"]) {
