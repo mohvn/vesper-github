@@ -3,7 +3,9 @@
 @namespace   StylishThemes
 @version     2.0
 @license     MIT
-@author mohvn
+@author      mohvn
+@advanced color base-color "Base color" #ffc799
+@advanced color bg-color "Background Color" #101010
 
 @advanced dropdown tab-size "Code Tab size" {
   2 "2" <<<EOT
@@ -59,56 +61,54 @@ domain("www.githubstatus.com") {
         --fontStack-sansSerif: "Geist", sans-serif !important;
         --fontStack-system: "Geist", sans-serif !important;
         --rgh-heat-color: var(--vspr-accent) !important;
-    .filter-item.selected,
-    .filter-item[aria-selected="true"],
-    .filter-item[aria-current]:not([aria-current="false"]) {
-      color: var(--vspr-bg-base) !important;
+    }
+    .filter-item.selected, .filter-item[aria-selected="true"], .filter-item[aria-current]:not([aria-current="false"]){
+        color:var(--vspr-bg-base) !important;
     }
 
-        .ContributionCalendar-day {
-          border: none !important;
+    .ContributionCalendar-day {
+        border: none !important;
     }
-.ContributionCalendar-day[data-level="0"] {
-  background-color: var(--vspr-bg-subtle) !important;
-}
 
-.copilotPreview,
-.copilotPreview-disabled,
-.copilotPreview__footer .copilotPreview__suggestionButton {
-  background-color: #181818;
-  border-radius: 6px !important;
-}
+    .ContributionCalendar-day[data-level="0"] {
+        background-color: var(--vspr-bg-subtle) !important;
+    }
 
-.ContributionCalendar-day,
-.ContributionCalendar-day[data-level="0"] {
+    .copilotPreview,
+    .copilotPreview-disabled,
+    .copilotPreview__footer .copilotPreview__suggestionButton {
+        background-color: #181818;
+        border-radius: 6px !important;
+    }
+    .ContributionCalendar-day,
+    .ContributionCalendar-day[data-level="0"] {
         outline: none;
     }
 
     .Box-body:last-of-type {
         border: none;
     }
-        div.border:nth-child(3) {
-          border: 1px solid #181818 !important;
-        }
-    
-        .ContributionCalendar-day[data-level="4"] {
-          fill: rgba(255, 199, 153, 1.0) !important;
-          background-color: rgba(255, 199, 153, 1.0) !important;
-        }
-    
-        .ContributionCalendar-day[data-level="3"] {
-          fill: rgba(255, 199, 153, 0.75) !important;
-          background-color: rgba(255, 199, 153, 0.75) !important;
-        }
+    div.border:nth-child(3) {
+        border: 1px solid #181818 !important;
+    }
+    .ContributionCalendar-day[data-level="4"] {
+        fill: rgba(255, 199, 153, 1.0) !important;
+        background-color: rgba(255, 199, 153, 1.0) !important;
+    }
 
-        .ContributionCalendar-day[data-level="2"] {
-          fill: rgba(255, 199, 153, 0.5) !important;
-          background-color: rgba(255, 199, 153, 0.5) !important;
-        }
+    .ContributionCalendar-day[data-level="3"] {
+        fill: rgba(255, 199, 153, 0.75) !important;
+        background-color: rgba(255, 199, 153, 0.75) !important;
+    }
 
-        .ContributionCalendar-day[data-level="1"] {
-          fill: rgba(255, 199, 153, 0.25) !important;
-          background-color: rgba(255, 199, 153, 0.25) !important;
+    .ContributionCalendar-day[data-level="2"] {
+        fill: rgba(255, 199, 153, 0.5) !important;
+        background-color: rgba(255, 199, 153, 0.5) !important;
+    }
+
+    .ContributionCalendar-day[data-level="1"] {
+        fill: rgba(255, 199, 153, 0.25) !important;
+        background-color: rgba(255, 199, 153, 0.25) !important;
     }
 
 
